@@ -1,0 +1,10 @@
+<launch>
+
+    <!-- Lanzar el nodo turtlesim_node del paquete turtlesim -->
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node" output="screen"/>
+
+    <!-- Lanzar el script turtle_pidc.py (PID Control) -->
+    <node pkg="Practicas_lab" type="turtle_pidc.py" name="pidc_node" output="screen"/>
+       
+</launch>
+
