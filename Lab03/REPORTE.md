@@ -201,5 +201,12 @@ def run(self):
     *   Initializes ROS publisher/subscriber for new turtle.
         
     *   Uses proportional control to ensure the turtle precisely reaches the goal.
-        
 
+# Final thoughts:        
+In conclusion, this ROS Python script effectively demonstrates fundamental robotics control concepts using the turtlesim simulator. The objectives addressed by the code include accurately calculating and displaying both the Distance to Goal (DTG) and Angle to Goal (ATG) using essential trigonometric functions, specifically the arctangent (atan2) operation. By using the atan2((y2 - y1), (x2 - x1)) function, the robot correctly computes the angular orientation required to reach the target position.
+
+The script initially places (spawns) the turtle directly at the goal location provided by the user, ensuring precision from the outset. Despite spawning directly at the goal, the proportional controller verifies the position and compensates for minor variations or simulation inaccuracies, continuously maintaining accurate alignment with the target position.
+
+The proportional control mechanism implemented in the script maps the computed DTG and angular error directly to linear and angular velocities, respectively. This simple yet effective mapping ensures smooth and responsive turtle movements, demonstrating the foundational principles of proportional feedback control.
+
+Finally, the infinite loop structure emphasizes continuous interaction, allowing repeated practice in target positioning and control tuning. Overall, this script provides an excellent foundational tool for learning and demonstrating basic robot kinematics, trigonometric navigation calculations, and feedback control principles within a ROS environment.
